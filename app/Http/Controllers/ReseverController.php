@@ -99,11 +99,9 @@ class ReseverController extends Controller
     public function downloadImage($filename)
     {
         $path = public_path('images/' . $filename);
-
         if (!file_exists($path)) {
             abort(404);
         }
-
         return Response::download($path);
     }
 

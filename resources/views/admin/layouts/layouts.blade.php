@@ -70,6 +70,10 @@
                     </p>
                 </div>
 
+                <div>
+                    <button class="btn btn-info" ><a href={{route('signOut')}}>signOut</a></button>
+                </div>
+
             </div>
         </nav>
 

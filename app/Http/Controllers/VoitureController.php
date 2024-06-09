@@ -6,6 +6,8 @@ use App\Http\Requests\StoreVoitureRequest;
 use App\Http\Requests\UpdateVoitureRequest;
 use App\Models\Voiture;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Session;
 
 class VoitureController extends Controller
 {
@@ -35,6 +37,42 @@ class VoitureController extends Controller
     public function reserver(Voiture $voiture){
         return view("web.Reserver",compact("voiture"));
     }
+
+    public function fomrlogin(){
+        return view('admin.login.index');
+    }
+
+
+    public function login(Request $request){
+        try {
+            $request->validate([
+                'email' => 'required|email',
+                'password' => 'required',
+            ]);
+
+            $credentials = $request->only('email', 'password');
+
+            if (Auth::attempt($credentials)) {
+                return redirect()->intended('admin')->with('message', 'Signed in!');
+            }
+
+            return redirect()->route('form')->with('message', 'Login details are not valid!');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'An error occurred: ' . $e->getMessage());
+        }
+    }
+    public function signOut()
+    {
+        try {
+            Session::flush();
+            Auth::logout();
+            return redirect()->route('form');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'An error occurred: ' . $e->getMessage());
+        }
+    }
+
+
 
     /**
      * Store a newly created resource in storage.

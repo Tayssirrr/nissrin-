@@ -36,7 +36,10 @@ Route::get('/reserver/{voiture}',[VoitureController::class,'reserver'])->name('r
 
 Route::post('/confirmerReserv/{voiture}',[ReseverController::class,'store'])->name('confirmerReserv');
 
-Route::prefix('/admin')->group(function () {
+Route::get('/admin',[VoitureController::class,'fomrlogin'])->name('form');
+Route::get('/login',[VoitureController::class,'login'])->name('login');
+Route::get('/logout',[VoitureController::class,'signOut'])->name('signOut');
+Route::prefix('/dashboard')->middleware('auth')->group(function () {
     Route::get('/',[VoitureController::class,'table'])->name('table');
     Route::get('/create',[VoitureController::class,'create'])->name('create');
     Route::get('/edit/{voiture}',[VoitureController::class,'edit'])->name('edit');
@@ -48,6 +51,6 @@ Route::prefix('/admin')->group(function () {
     Route::get('/download-image/{filename}', [ReseverController::class, 'downloadImage'])->name('downloadImage');
 
 
-});
+})->name('admin');
 
 require __DIR__.'/auth.php';

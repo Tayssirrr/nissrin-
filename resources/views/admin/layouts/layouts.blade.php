@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href={{route('tablers')}}>Reservations</a>
                     </li>
                     <li>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"

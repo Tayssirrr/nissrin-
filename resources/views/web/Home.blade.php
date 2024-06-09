@@ -25,7 +25,7 @@
                             <p class="text text-center" >{{$voiture->titre}}</p>
                             <p class="text text-center">{{$voiture->price}}</p>
                         </div>
-                        <a href="" class="w-100 text-center reserver" >Reserver</a>
+                        <a href={{route('reserver',$voiture->id)}} class="w-100 text-center reserver" >Reserver</a>
                     </div>
                 </div>
                 @endforeach

@@ -31,6 +31,11 @@ class VoitureController extends Controller
         return view("admin.voitures.add");
     }
 
+
+    public function reserver(Voiture $voiture){
+        return view("web.Reserver",compact("voiture"));
+    }
+
     /**
      * Store a newly created resource in storage.
      */

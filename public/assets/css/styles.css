@@ -1,0 +1,97 @@
+*
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#container{
+    padding: 10px 0px;
+    background-color: black;
+    width: 100%;
+}
+.marque{
+    width: 25%;
+}
+.button{
+    background-color: #D3B16F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ul li {
+   margin: 0 20px;
+}
+
+.ul li a{
+    text-decoration: none;
+    color: #D3B16F;
+    font-size: 20px;
+}
+
+.ul li > a:hover{
+    color: white;
+
+}
+
+.paragraph{
+
+
+    position: absolute;
+    top: 27%;
+    left: 24%;
+    color: white;
+    font-size: 58px;
+
+}
+.title1{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.div1 div{
+    margin: 10px 0px;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img{
+    border-radius: 30px;
+}
+.reserver{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+.book{
+    background-color: #D3B16F;
+    text-decoration: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.bo1{
+    background-color: #D3B16F;
+    text-decoration: none;
+    color: white;
+    width: 37%;
+    border-radius: 20px;
+    padding: 10px 0px;
+    margin-left: 32%;
+
+}
+
+.elementor-heading-title{
+    font-size: 18px;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 11px;
+    letter-spacing: 9px;
+    word-spacing: 3px;
+}
+
+

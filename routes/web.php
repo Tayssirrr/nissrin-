@@ -35,6 +35,7 @@ Route::get('/', [VoitureController::class,'index'])->name('home');
 Route::get('/reserver/{voiture}',[VoitureController::class,'reserver'])->name('reserver');
 
 Route::post('/confirmerReserv/{voiture}',[ReseverController::class,'store'])->name('confirmerReserv');
+Route::get('/cars',[VoitureController::class,'carstous'])->name('carstous');
 
 Route::get('/admin',[VoitureController::class,'fomrlogin'])->name('form');
 Route::get('/login',[VoitureController::class,'login'])->name('login');

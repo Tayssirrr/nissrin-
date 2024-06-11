@@ -20,19 +20,7 @@
                 <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpeg);"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
-                        </ul>
+                        <a href="{{route('table')}}">Voiture</a>
                     </li>
                     <li>
                         <a href={{route('tablers')}}>Reservations</a>

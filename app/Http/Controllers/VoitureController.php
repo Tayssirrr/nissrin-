@@ -17,12 +17,18 @@ class VoitureController extends Controller
     public function index()
     {
         //
-        $voitures = Voiture::all();
+        $voitures = Voiture::paginate(6);
         return view("web.Home",compact('voitures'));
     }
     public function table(){
         $voitures = Voiture::all();
         return view("admin.voitures.table",compact('voitures'));
+    }
+
+    public function carstous(){
+        $voitures = Voiture::all();
+        return view('web.cars',compact('voitures'));
+
     }
 
     /**

@@ -6,6 +6,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 
        <!--font-awesome.min.css-->
@@ -24,11 +26,50 @@
        <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <style>
-    a{
+     a{
         text-decoration: none;
-    }
-</style>
+     }
+        #scroll-Top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: none;
+            width: 40px;
+            line-height: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+            color: #fff;
+            background: #00ca43;
+            border: 1px solid #4e4ffa;
+            border-radius: 50%;
+            transition: .5s;
+            z-index: 2;
+        }
+
+        #scroll-Top:hover {
+            background: #fff;
+            color: #4e4ffa;
+            border: 1px solid #7a7aaa;
+        }
+
+        #scroll-Top i {
+            position: relative;
+            animation-name: example;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+
+        @keyframes example {
+            from { bottom: 0; }
+            to { bottom: 10px; }
+        }
+    </style>
+
 <body>
 
  <div class="" id="container" >
@@ -105,7 +146,34 @@
           </div>
         </div>
       </div>
+
+      <div>
+        <div id="scroll-Top" title="Chat with us on WhatsApp" class="return-to-top">
+            <i class="fa fa-whatsapp"></i>
+        </div>
+    </div>
+
+
+
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const button = document.getElementById('scroll-Top');
+            if (window.scrollY > 200) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        document.getElementById('scroll-Top').addEventListener('click', function() {
+            const phoneNumber = '7777-543264';
+            const message = encodeURIComponent('Hello, I would like to chat with you.');
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+
 
     <script src="assets/js/jquery.js"></script>
 
@@ -120,6 +188,7 @@
 
 		<!--owl.carousel.js-->
         <script src="assets/js/owl.carousel.min.js"></script>
+
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 

@@ -11,6 +11,9 @@
 }
 .marque{
     width: 25%;
+    background: white;
+    opacity: 35%;
+
 }
 .button{
     background-color: #D3B16F;
@@ -93,6 +96,8 @@
     letter-spacing: 9px;
     word-spacing: 3px;
 }
+
+
 /* Importing Google font - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -106,10 +111,10 @@
 .footer {
   position: absolute;
   margin-top: 20px;
-  
+
 
   background: #10182F;
-  border-radius: 6px;
+  border-radius: 50px 50px 0px 0px;
 }
 
 .footer .footer-row {
@@ -228,5 +233,7 @@
     margin: 10px 0 0 0;
   }
 }
+
+
 
 

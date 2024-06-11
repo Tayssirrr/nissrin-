@@ -35,7 +35,11 @@
     </div>
     <div class="container mt-5" >
         <h2 class="text text-center mt-3 elementor-heading-title " >The number one car rental agency in Morocco</h2>
-        <div class="row mt-5 container ">
+        <div class="row mt-5 container " style="
+   
+    position: relative;
+    left: 10%;
+">
                 <div class="col-md-3">
                     <img src={{asset('assets/img/gg.jpeg')}} class="marque" alt="logo"/>
                 </div>

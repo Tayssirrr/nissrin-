@@ -7,11 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
 
 
        <!--font-awesome.min.css-->
        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
 
 
 
@@ -74,8 +78,8 @@
 
  <div class="" id="container" >
     <nav class="container d-flex justify-content-between align-items-center" >
-        <div>
-            <a href=""><img src={{asset('assets/img/logo1.jpeg')}} width="132x" alt="logo" /></a>
+        <div  >
+            <a href="" ><img src={{asset('assets/img/logo1.jpeg')}} width="132x" alt="logo" /></a>
         </div>
         <div>
             <ul class="ul d-flex" >
@@ -172,6 +176,10 @@
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(whatsappUrl, '_blank');
         });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 

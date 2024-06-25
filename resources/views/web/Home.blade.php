@@ -2,7 +2,10 @@
 @section('content')
 
 <div class="w-100">
-    <img src="{{ asset('assets/img/v2.jpeg') }}" class="animate__backInDown"  width="100%" height="820px" />
+    <div style="position: relative; width: 100%; height: 810px; overflow: hidden;" class="animate__animated animate__bounceInDown"  >
+        <video src="{{ asset('assets/videos/class.mp4') }}" autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: auto;"></video>
+    </div>
+
     <div class="paragraph animate__animated animate__backInDown">
         <p class="text text-center">I Book</p>
         <!-- <p class="text text-center">Rent A car Today with Us</p> -->

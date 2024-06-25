@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="w-100">
-    <div style="position: relative; width: 100%; height: 810px; overflow: hidden;" class="animate__animated animate__bounceInDown"  >
+    <div style="position: relative; width: 100%; height: 800px; overflow: hidden;" class="animate__animated animate__bounceInDown"  >
         <video src="{{ asset('assets/videos/class.mp4') }}" autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: auto;"></video>
     </div>
 

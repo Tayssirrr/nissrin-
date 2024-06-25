@@ -77,9 +77,11 @@
 <body>
 
  <div class="" id="container" >
-    <nav class="container d-flex justify-content-between align-items-center" >
+    <nav class="container d-flex justify-content-between align-items-center" style="
+    height: 72px;
+">
         <div  >
-            <a href="" ><img src={{asset('assets/img/logo1.jpeg')}} width="132x" alt="logo" /></a>
+            <a href="" ><img src={{asset('assets/img/logo1.png')}} width="132x" alt="logo" /></a>
         </div>
         <div>
             <ul class="ul d-flex" >
